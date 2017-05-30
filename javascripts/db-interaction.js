@@ -15,4 +15,18 @@ function getFamily() {
       });
     }
 
-module.exports = {getFamily};
+function addToFirebase(newObj) {
+  console.log("add person", newObj);
+    return new Promise (function(resolve, reject) {
+      $.ajax({
+        url: `${firebase.getFBsettings().databaseURL}/family.json`,
+        type: 'POST',
+        data: JSON.stringify(newObj),
+        dataType: 'json'
+      }).done(function(personID){
+        resolve(personID);
+      });
+    });
+}
+
+module.exports = {getFamily, addToFirebase};

@@ -10,6 +10,17 @@
         "inappropriate shouting",
         "tantrums"
       ]
+    },
+    {
+      "name": "Martha Power",
+      "age": 23,
+      "gender": "female",
+      "skills": [
+        "sarcasm",
+        "dog voice",
+        "eye rolls",
+        "hugs"
+      ]
     }
   ]
 }
