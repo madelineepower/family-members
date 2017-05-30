@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Family Members</title>
+    <link rel="stylesheet" href="lib/node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+   <h3>My Family</h3>
+   <div class="wrapper row">
+     <div id="add-member" class="col s4">
+       <h5>Add A Family Member</h5>
+       <div>
+         <form class="col s12">
+           <label for="name">Name<input placeholder="Enter first and last name" id="name" type="text"></label>
+            <label for="age">Age
+             <input placeholder="Enter age" id="age" type="text"></label>
+             <label for="gender">Gender
+             <input placeholder="Male or Female" id="gender" type="text"></label>
+           <label for="skills">Skills
+           <div>
+             <input placeholder="First skill" id="first" type="text">
+             <input placeholder="Second skill" id="second" type="text">
+             <input placeholder="Third skill" id="third" type="text">
+             <input placeholder="Fourth skill" id="fourth" type="text">
+           </div></label>
+           <button>Submit</button>
+         </form>
+       </div>
+     </div>
+    <div id="list-family" class="col s7">
+         <h5>List of Family Members</h5>
+         <div id="family-members">
+
+         </div>
+    </div>
+ </div>
+  <script type="text/javascript" src="dist/app.js"></script>
+  </body>
+</html>
